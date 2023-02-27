@@ -23,4 +23,11 @@
 void app_main()
 {
     gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
+
+    while (1) {
+        gpio_set_level(LED_GPIO, 1);
+        vTaskDelay(1000 / portTICK_RATE_MS);
+        gpio_set_level(LED_GPIO, 0);
+        vTaskDelay(1000 / portTICK_RATE_MS);
+    }
 }
