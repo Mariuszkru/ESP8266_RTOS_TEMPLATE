@@ -18,6 +18,8 @@
 #include "FreeRTOSConfig.h"
 #include "../build/include/sdkconfig.h"
 
+#define LED_GPIO 2
+
 void app_main()
 {
 
