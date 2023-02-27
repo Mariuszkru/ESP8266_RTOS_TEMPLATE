@@ -22,5 +22,5 @@
 
 void app_main()
 {
-
+    gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
 }
