@@ -1,42 +1,27 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Build",
-            "type": "shell",
-            "group": {
-                "kind": "build"
-            },
-            "command": "make -j12",
-            "problemMatcher": [
-                "$gcc"
-            ]
-        },
-        {
-            "label": "flash",
-            "type": "shell",
-            "command": "make flash -j12",
-            "problemMatcher": []
-        },
-        {
-            "label": "Build & Flash",
-            "dependsOrder": "sequence",
-            "dependsOn": ["Build", "flash"],
-            "problemMatcher": [
-                "$gcc"
-            ] 
-          },
-          {
-            "label": "Erase",
-            "type": "shell",
-            "command": "esptool --port ${config:esp.target.port} -b ${config:esp.target.baudrate} erase_flash",
-            "problemMatcher": []
-          }, 
-          {
-            "label": "menu",
-            "type": "shell",
-            "command": "make menuconfig",
-            "problemMatcher": []
-        },        
-    ],
-} 
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "group": {
+        "kind": "build"
+      },
+      "command": "make -j12",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Build & Flash",
+      "type": "shell",
+      "command": "make flash -j12",
+      "problemMatcher": []
+    },
+
+    {
+      "label": "menu",
+      "type": "shell",
+      "command": "make menuconfig",
+      "problemMatcher": []
+    }
+  ]
+}
