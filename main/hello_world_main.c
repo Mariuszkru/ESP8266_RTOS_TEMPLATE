@@ -12,6 +12,8 @@
 #include "esp_system.h"
 #include "esp_spi_flash.h"
 
+#include "driver/gpio.h"
+
 #include "portmacro.h"
 #include "FreeRTOSConfig.h"
 #include "../build/include/sdkconfig.h"
