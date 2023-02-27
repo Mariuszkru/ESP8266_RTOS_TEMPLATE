@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+        
+            "name": "esp8266", 
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${config:esp.path.Sdk}/**",
+                "${config:esp.path.compiler}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c99",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "${config:esp.path.compiler}\\bin\\xtensa-lx106-elf-gcc" 
+        }
+    ],
+    "version": 4
+}

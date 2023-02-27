@@ -1,0 +1,30 @@
+{
+  "esp": {
+    "path": {
+      "user": "mariu",            // user name of windows machine
+      "msys": "C:\\msys32",       // path to msys32
+      "compiler": "${config:esp.path.msys}\\xtensa-lx106-elf",
+      "Sdk": "${config:esp.path.msys}\\home\\${config:esp.path.user}\\ESP8266_RTOS",
+    }
+  },
+
+  "C_Cpp.errorSquiggles": "enabled",
+  "terminal.integrated.env.windows": {
+    "TERM":"linux",
+    "IDF_PATH": "${config:esp.path.Sdk}",
+    "PATH": "${config:esp.path.compiler}\\bin;${config:esp.path.msys}\\usr\\bin;${config:esp.path.msys}\\mingw32\\bin;"
+  },
+  "terminal.integrated.profiles.windows": {
+    "esp8266": {
+      "path": "${config:esp.path.msys}\\usr\\bin\\bash.exe",
+      "args": ["--login", "-i"],
+      "env": {
+        "MSYSTEM": "MINGW32",
+        "CHERE_INVOKING": "1",
+        "MSYS2_PATH_TYPE": "inherit"
+      }
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "esp8266"  
+}
+
