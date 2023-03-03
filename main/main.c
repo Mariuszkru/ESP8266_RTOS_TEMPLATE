@@ -5,6 +5,7 @@
 #include "esp_spi_flash.h"
 
 #include "driver/gpio.h"
+#include "driver/uart.h"
 
 #include "portmacro.h"
 #include "FreeRTOSConfig.h"
@@ -14,6 +15,8 @@
 
 void app_main()
 {
+    uart_set_baudrate(0,115200);
+
     gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
 
     while (1) {
