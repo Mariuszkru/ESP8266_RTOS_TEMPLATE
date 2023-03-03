@@ -14,11 +14,11 @@
       "label": "Build & Flash",
       "type": "shell",
       "command": "make flash -j12",
-      "problemMatcher": []
+      "problemMatcher": ["$gcc"]
     },
 
     {
-      "label": "menu",
+      "label": "Menu",
       "type": "shell",
       "command": "make menuconfig",
       "problemMatcher": []
