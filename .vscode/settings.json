@@ -1,5 +1,8 @@
 {
   "esp": {
+    "build": {
+      "parallel": "12"
+    },
     "path": {
       "user": "mariu", // user name of windows machine
       "msys": "C:\\msys32", // path to msys32

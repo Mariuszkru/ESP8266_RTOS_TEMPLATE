@@ -7,13 +7,13 @@
       "group": {
         "kind": "build"
       },
-      "command": "make -j12",
+      "command": "make -j${config:esp.build.parallel}",
       "problemMatcher": ["$gcc"]
     },
     {
       "label": "Build & Flash",
       "type": "shell",
-      "command": "make flash -j12",
+      "command": "make flash -j${config:esp.build.parallel}",
       "problemMatcher": ["$gcc"]
     },
 
