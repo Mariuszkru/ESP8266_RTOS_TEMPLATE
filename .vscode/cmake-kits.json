@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Xtensa Toolchain",
+        "toolchainFile": "${config:esp.path.Sdk}/tools/cmake/project.cmake",
+        "environmentVariables": {
+            "CC": "${config:esp.path.compiler}/bin/xtensa-lx106-elf-g++",
+            "CXX": "${config:esp.path.compiler}/bin/xtensa-lx106-elf-gcc",
+            "IDF_PATH": "${config:esp.path.Sdk}",
+            "PATH": "${config:esp.path.compiler}/bin:${env.PATH}"
+        },
+        "compilers": {
+            "CC": "${config:esp.path.compiler}/bin/xtensa-lx106-elf-g++",
+            "CXX": "${config:esp.path.compiler}/bin/xtensa-lx106-elf-gcc"
+        }
+    }
+]

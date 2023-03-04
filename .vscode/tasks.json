@@ -29,6 +29,12 @@
       "problemMatcher": []
     },
     {
+      "label": "Clean",
+      "type": "shell",
+      "command": "make clean",
+      "problemMatcher": []
+    },
+    {
       "label": "Build & Flash & Monitor",
       "dependsOrder": "sequence",
       "dependsOn": ["Build & Flash", "Monitor"],

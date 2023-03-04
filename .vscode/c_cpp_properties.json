@@ -9,8 +9,11 @@
       ],
       "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
       "cStandard": "c99",
+      "cppStandard": "c++11",
       "intelliSenseMode": "windows-gcc-x64",
-      "compilerPath": "${config:esp.path.compiler}\\bin\\xtensa-lx106-elf-gcc"
+      "compilerPath": "${config:esp.path.compiler}/bin/xtensa-lx106-elf-gcc",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+      "configurationProvider": "vector-of-bool.cmake-tools"
     }
   ],
   "version": 4
