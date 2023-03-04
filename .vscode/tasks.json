@@ -16,12 +16,23 @@
       "command": "make flash -j${config:esp.build.parallel}",
       "problemMatcher": ["$gcc"]
     },
-
     {
       "label": "Menu",
       "type": "shell",
       "command": "make menuconfig",
       "problemMatcher": []
+    },
+    {
+      "label": "Monitor",
+      "type": "shell",
+      "command": "make monitor",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build & Flash & Monitor",
+      "dependsOrder": "sequence",
+      "dependsOn": ["Build & Flash", "Monitor"],
+      "problemMatcher": ["$gcc"]
     }
   ]
 }
