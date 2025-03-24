@@ -7,6 +7,7 @@
       "user": "mariu", // user name of windows machine
       "msys": "C:\\msys32", // path to msys32
       "compiler": "${config:esp.path.msys}\\xtensa-lx106-elf",
+      "pythonScrips": "${config:esp.path.msys}\\mingw32\\bin\\Scripts",
       "Sdk": "${config:esp.path.msys}\\home\\${config:esp.path.user}\\ESP8266_RTOS"
     }
   },
@@ -14,7 +15,7 @@
   "terminal.integrated.env.windows": {
     "TERM": "linux",
     "IDF_PATH": "${config:esp.path.Sdk}",
-    "PATH": "${config:esp.path.compiler}\\bin;${config:esp.path.msys}\\usr\\bin;${config:esp.path.msys}\\mingw32\\bin;"
+    "PATH": "${config:esp.path.compiler}\\bin;${config:esp.path.msys}\\usr\\bin;${config:esp.path.msys}\\mingw32\\bin;${config:esp.path.pythonScrips};"
   },
   "terminal.integrated.profiles.windows": {
     "esp8266": {
